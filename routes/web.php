@@ -17,7 +17,8 @@ Route::get('/', function () {
     $parola = [
         'mondo' => 'Hello World',
     ];
-    return view('home', $parola);
+    $parole = 'Hello World';
+    return view('home', $parola, compact('parole'));
 
 
 });
